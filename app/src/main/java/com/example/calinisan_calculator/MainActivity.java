@@ -56,35 +56,31 @@ public class  MainActivity extends AppCompatActivity  implements View.OnClickLis
         switch (v.getId()) {
 
             case R.id.btnAdd:
-                //code
-                answer = variable1 + variable2;
-                txtAnswer.setText(String.valueOf(answer));
-
-
+                txtAnswer.setText(String.valueOf(add(variable1, variable2)));
                 break;
             case R.id.btnSubtract:
-                answer = variable1 - variable2;
-                txtAnswer.setText(String.valueOf(answer));
-
+                txtAnswer.setText(String.valueOf(subtract(variable1, variable2)));
                 break;
             case R.id.btnDivide:
-                answer = variable1 / variable2;
-                txtAnswer.setText(String.valueOf(answer));
-
+                txtAnswer.setText(String.valueOf(divide(variable1, variable2)));
                 break;
             case R.id.btnMultiply:
-                answer = variable1 * variable2;
-                txtAnswer.setText(String.valueOf(answer));
-
+                txtAnswer.setText(String.valueOf(multiply(variable1, variable2)));
                 break;
             case R.id.btnModulo:
-                answer = variable1 % variable2;
-                txtAnswer.setText(String.valueOf(answer));
-
+                txtAnswer.setText(String.valueOf(modulo(variable1, variable2)));
                 break;
-
-
         }
 
     }
+
+   double add(double x, double y) {return x + y;}
+   double subtract(double x, double y) {return x - y;}
+   double divide(double x, double y) {return x / y;}
+   double multiply(double x, double y) {return x * y;}
+   double modulo(double x, double y) {return x % y;}
+
+
+
+
 }
