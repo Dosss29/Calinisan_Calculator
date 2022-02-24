@@ -48,7 +48,7 @@ public class  MainActivity extends AppCompatActivity  implements View.OnClickLis
         double variable1, variable2, answer;
 
         variable1 = Double.parseDouble(String.valueOf(txtVariable1.getText()));
-        variable2 = Double.parseDouble(String.valueOf(txtVariable1.getText()));
+        variable2 = Double.parseDouble(String.valueOf(txtVariable2.getText()));
 
 
 
